@@ -1,0 +1,10 @@
+<div>
+  <h2>Dashboard</h2>
+  <p>Welcome to the dashboard!</p>
+  <h3>Your Permissions:</h3>
+  <a [routerLink]="['/profile']"> link to profile </a>
+
+  <ul>
+    <li *ngFor="let permission of userPermissions">{{ permission }}</li>
+  </ul>
+</div>
